@@ -1,0 +1,54 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "WordPress: Start Local Server",
+      "type": "shell",
+      "command": "echo",
+      "args": ["Start your Local by Flywheel site from the Local app"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "WordPress: Sync from Local",
+      "type": "shell",
+      "command": "rsync",
+      "args": [
+        "-av",
+        "--exclude=wp-config.php",
+        "~/Local Sites/aslamfiretest/app/public/",
+        "${workspaceFolder}/"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "WordPress: Sync to Local",
+      "type": "shell",
+      "command": "rsync",
+      "args": [
+        "-av",
+        "--exclude=wp-config.php",
+        "${workspaceFolder}/",
+        "~/Local Sites/aslamfiretest/app/public/"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      }
+    }
+  ]
+}

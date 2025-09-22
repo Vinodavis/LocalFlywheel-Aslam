@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "bmewburn.vscode-intelephense-client",
+    "ms-vscode.vscode-json",
+    "formulahendry.auto-rename-tag",
+    "bradlc.vscode-tailwindcss",
+    "esbenp.prettier-vscode",
+    "xdebug.php-debug",
+    "wordpressplugindevs.wordpress-hooks",
+    "claudeai.claude-code",
+    "ms-vscode.vscode-typescript-next",
+    "ms-vscode.vscode-css-peek",
+    "christian-kohler.path-intellisense",
+    "ms-vscode.vscode-html-css-support"
+  ]
+}

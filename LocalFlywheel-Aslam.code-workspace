@@ -1,0 +1,48 @@
+{
+  "folders": [
+    {
+      "name": "WordPress Root",
+      "path": "."
+    },
+    {
+      "name": "Themes",
+      "path": "./wp-content/themes"
+    },
+    {
+      "name": "Plugins",
+      "path": "./wp-content/plugins"
+    }
+  ],
+  "settings": {
+    "php.validate.enable": true,
+    "files.associations": {
+      "*.php": "php",
+      "*.html": "html",
+      "*.css": "css",
+      "*.js": "javascript"
+    },
+    "files.exclude": {
+      "**/node_modules": true,
+      "**/wp-admin": true,
+      "**/wp-includes": true,
+      "**/.git": false
+    },
+    "search.exclude": {
+      "**/wp-admin": true,
+      "**/wp-includes": true,
+      "**/node_modules": true,
+      "**/vendor": true
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "bmewburn.vscode-intelephense-client",
+      "claudeai.claude-code",
+      "wordpressplugindevs.wordpress-hooks",
+      "ms-vscode.vscode-json",
+      "formulahendry.auto-rename-tag",
+      "esbenp.prettier-vscode",
+      "xdebug.php-debug"
+    ]
+  }
+}
